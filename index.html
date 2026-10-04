@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dvir Itshacov · Software Developer</title>
+<meta name="description" content="Dvir Itshacov, software developer and Computer Science student at Ben-Gurion University. Full-stack and AI/LLM projects.">
+<meta name="theme-color" content="#0d1720">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="mark" href="#">Dvir Itshacov</a>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- Hero: name on the left, a route through the three projects on the right -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="status"><span class="dot" aria-hidden="true"></span>Open to Full-Stack and AI Engineering roles</p>
+    <h1>Dvir<br>Itshacov</h1>
+    <p class="role">Software developer building full-stack products and AI agents.</p>
+    <p class="intro">
+      Computer Science student at Ben-Gurion University, in my final semester.
+      I take projects all the way: database, API, interface, tests, and a deployment
+      you can open.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:dvir54693@gmail.com">Email me</a>
+      <a class="btn" href="https://github.com/Dvir54" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/dvir-itshacov-154050353/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+
+  <nav class="route" aria-label="Projects">
+    <svg class="route-line" viewBox="0 0 400 520" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M60 30 C 320 60, 340 170, 200 230 S 40 370, 240 420 S 360 480, 330 500" />
+    </svg>
+    <a class="stop s1" href="#ridematch">
+      <span class="pin" aria-hidden="true"></span>
+      <span class="stop-name">RideMatch</span>
+      <span class="stop-desc">Ride-sharing app, live</span>
+    </a>
+    <a class="stop s2" href="#job-agent">
+      <span class="pin" aria-hidden="true"></span>
+      <span class="stop-name">Job Search Agent</span>
+      <span class="stop-desc">Claude scores jobs, tailors my CV</span>
+    </a>
+    <a class="stop s3" href="#crypto">
+      <span class="pin" aria-hidden="true"></span>
+      <span class="stop-name">AI Crypto Advisor</span>
+      <span class="stop-desc">Personalized market dashboard</span>
+    </a>
+  </nav>
+</section>
+
+<section class="about" aria-labelledby="about-h">
+  <h2 id="about-h">About me</h2>
+  <div class="about-body">
+    <p>
+      I enjoy building software, understanding how systems work, and turning
+      complex problems into practical solutions. My projects tend to go all the way:
+      a schema and migrations, an API with a written contract, a front end, tests at
+      every layer, and a deployment someone can actually open.
+    </p>
+    <p>
+      Lately most of my work sits where full-stack meets AI: agents that collect
+      data, let an LLM judge it, and keep the parts that must be repeatable in plain,
+      tested code. I'm self-driven and curious, comfortable solving problems on my own
+      and as part of a team, and I'm looking for a place where I can contribute,
+      keep learning, and grow as a developer.
+    </p>
+  </div>
+</section>
+
+<section id="projects" class="projects" aria-labelledby="projects-h">
+  <h2 id="projects-h">Projects</h2>
+
+  <!-- RideMatch -->
+  <article class="project" id="ridematch" style="--accent: #f2b33d">
+    <header class="project-head">
+      <h3>RideMatch</h3>
+      <p class="tagline">A ride-sharing web app, live in production.</p>
+    </header>
+    <div class="stage stage-ride">
+      <svg class="map" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="roads">
+          <path d="M-20 140 C 300 120, 520 260, 820 220 S 1150 120, 1220 160" />
+          <path d="M-20 430 C 260 470, 420 360, 700 400 S 1050 520, 1220 470" />
+          <path d="M240 -20 C 260 180, 180 380, 280 620" />
+          <path d="M900 -20 C 860 200, 980 380, 920 620" />
+          <path d="M560 -20 C 600 160, 520 300, 620 620" />
+        </g>
+        <path class="trip" d="M120 470 C 300 420, 380 300, 600 300 S 920 180, 1080 110" />
+        <circle class="trip-end" cx="120" cy="470" r="9" />
+        <circle class="trip-end" cx="1080" cy="110" r="9" />
+      </svg>
+      <figure class="browser b-ride">
+        <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>app.ridematchapp.com</span></div>
+        <img src="img/rm-landing.jpg" width="800" height="500" loading="lazy" alt="RideMatch landing page: 'Someone is already driving your route'">
+      </figure>
+      <figure class="phone p1"><img src="img/rm-search.jpg" width="420" height="909" loading="lazy" alt="Passenger search screen with pickup, destination, departure, seats and budget"></figure>
+      <figure class="phone p2"><img src="img/rm-ride.jpg" width="420" height="909" loading="lazy" alt="Driver's ride screen: Tel Aviv to Givat Shmuel, 2 of 3 seats free, 20 ILS a seat"></figure>
+    </div>
+    <div class="project-body">
+      <div class="project-intro">
+        <p>
+          Drivers post the route and time they are already travelling; passengers search,
+          get matches ranked by how well they fit, and request a seat. The driver approves,
+          they travel, and both rate each other. An admin panel handles moderation.
+        </p>
+        <div class="links">
+          <a class="btn primary" href="https://app.ridematchapp.com" target="_blank" rel="noopener">Open the live app</a>
+          <a class="btn" href="https://github.com/Dvir54/ridematch-platform" target="_blank" rel="noopener">View the code</a>
+        </div>
+      </div>
+      <div class="project-detail">
+        <ul class="points">
+          <li>Contract-first: an OpenAPI spec drives the backend and the generated front-end types.</li>
+          <li>Tested at every layer with pytest, Vitest, Playwright end-to-end and Schemathesis fuzzing.</li>
+          <li>Deployed on Render with a Neon PostgreSQL database.</li>
+        </ul>
+        <ul class="chips" aria-label="Technologies">
+          <li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>Redis</li><li>React</li><li>TypeScript</li><li>TanStack Query</li><li>Tailwind</li><li>Clerk</li><li>Mapbox</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- Job Search Agent -->
+  <article class="project" id="job-agent" style="--accent: #7fd6c2">
+    <header class="project-head">
+      <h3>Job Search Agent</h3>
+      <p class="tagline">An AI agent that finds junior roles in Israel and tailors my CV to each one.</p>
+    </header>
+    <div class="stage stage-agent">
+      <ol class="pipeline" aria-label="How the agent works">
+        <li>Collect LinkedIn postings</li>
+        <li>Filter and deduplicate</li>
+        <li class="ai">Claude scores the fit</li>
+        <li class="ai">Tailor the CV in Canva</li>
+        <li>Send the daily email</li>
+      </ol>
+      <figure class="mail">
+        <div class="mail-head" aria-hidden="true">
+          <i></i><i></i><i></i>
+          <span class="mail-subject">Your job matches for today</span>
+        </div>
+        <div class="mail-meta" aria-hidden="true">
+          <span class="avatar">JA</span>
+          <span><strong>Job Search Agent</strong><br><small>Every morning, 08:00</small></span>
+        </div>
+        <div class="matches" role="img" aria-label="Two matches from a real daily email, each with a fit score, the reasoning, and links to apply and to the tailored CV">
+          <div class="m">
+            <p class="m-title"><strong>Software Developer, AI &amp; HR Automation</strong> <span>Check Point Software</span> <b>fit 88</b></p>
+            <p class="m-why">Qualifications cap the role at two years of experience and centre on web applications, LLM/agent work and API integrations, all evidenced by the candidate's React/TypeScript project and MCP and Claude Agent SDK work.</p>
+            <p class="m-links"><u>Apply</u> <u>View CV in Canva</u> <code>jobs pdf 4452599968</code></p>
+          </div>
+          <div class="m">
+            <p class="m-title"><strong>AI Engineer / Full Stack Developer, LLM &amp; RAG</strong> <span>recruitricks</span> <b>fit 84</b></p>
+            <p class="m-why">The must-haves centre on strong Python/React plus hands-on LLM API and prompt work; RAG is listed only as an advantage and is learnable on the job.</p>
+            <p class="m-links"><u>Apply</u> <u>View CV in Canva</u> <code>jobs pdf 4454746761</code></p>
+          </div>
+        </div>
+        <p class="mail-foot" aria-hidden="true">Scanned 65 postings in the last 24h, 9 judged, 4 matched</p>
+      </figure>
+      <div class="fit" aria-hidden="true"><span>fit</span><strong>88</strong></div>
+    </div>
+    <div class="project-body">
+      <div class="project-intro">
+        <p>
+          Every morning it collects new LinkedIn postings, deduplicates them, has Claude score
+          each one against my CV with written reasoning, generates a tailored CV for strong
+          matches, and emails me the results. It never applies on its own; I decide.
+        </p>
+        <div class="links">
+          <a class="btn primary" href="https://github.com/Dvir54/JobSearchAgentSystem" target="_blank" rel="noopener">View the code</a>
+        </div>
+      </div>
+      <div class="project-detail">
+        <ul class="points">
+          <li>LLM for judgment, deterministic code for enforcement: filtering, dedup and persistence stay in tested Python.</li>
+          <li>Guards run as hooks on the agent's tool calls and reject a CV that claims a skill the base CV doesn't support.</li>
+          <li>Runs as a scheduled task and sends an email every day, even when a run fails.</li>
+        </ul>
+        <ul class="chips" aria-label="Technologies">
+          <li>Python</li><li>Claude Agent SDK</li><li>MCP</li><li>Canva</li><li>PostgreSQL</li><li>Docker</li><li>pytest</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <!-- AI Crypto Advisor -->
+  <article class="project" id="crypto" style="--accent: #a99bff">
+    <header class="project-head">
+      <h3>AI Crypto Advisor</h3>
+      <p class="tagline">A personalized crypto dashboard with AI-generated market insights.</p>
+    </header>
+    <div class="stage stage-crypto">
+      <figure class="browser b-crypto">
+        <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>crypto-advisor-plum.vercel.app</span></div>
+        <img src="img/ca-dashboard.jpg" width="800" height="760" loading="lazy" alt="Crypto Advisor dashboard: live Bitcoin, Ethereum and Solana prices with daily change, and like and dislike buttons">
+      </figure>
+      <figure class="card ca-insight"><img src="img/ca-insight.jpg" width="734" height="466" loading="lazy" alt="AI Insight card with advice written for a long-term holder of BTC, ETH and SOL"></figure>
+      <figure class="card ca-onboard"><img src="img/ca-onboarding.jpg" width="750" height="550" loading="lazy" alt="Onboarding step 1 of 3: choosing crypto assets, with Bitcoin, Ethereum and Solana selected"></figure>
+    </div>
+    <div class="project-body">
+      <div class="project-intro">
+        <p>
+          New users take a short onboarding quiz about the coins they follow, their investor
+          type and the content they want. The dashboard then combines live prices, market
+          news and an AI-written analysis tailored to those answers, and likes and dislikes
+          on each item shape what comes next.
+        </p>
+        <div class="links">
+          <a class="btn primary" href="https://crypto-advisor-plum.vercel.app" target="_blank" rel="noopener">Open the live app</a>
+          <a class="btn" href="https://github.com/Dvir54/crypto-advisor" target="_blank" rel="noopener">View the code</a>
+        </div>
+      </div>
+      <div class="project-detail">
+        <ul class="points">
+          <li>JWT authentication with bcrypt-hashed passwords.</li>
+          <li>Live data from CoinGecko and CryptoPanic; insights generated through OpenRouter.</li>
+          <li>Frontend on Vercel, API and database on Railway.</li>
+        </ul>
+        <ul class="chips" aria-label="Technologies">
+          <li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy</li><li>React 19</li><li>TypeScript</li><li>Vite</li><li>OpenRouter</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="skills" class="skills" aria-labelledby="skills-h">
+  <h2 id="skills-h">Skills</h2>
+  <dl class="skill-grid">
+    <div><dt>Languages</dt><dd>Python, TypeScript, JavaScript, SQL, C++, Java</dd></div>
+    <div><dt>Backend</dt><dd>FastAPI, SQLAlchemy, Alembic, Pydantic, REST and OpenAPI, JWT</dd></div>
+    <div><dt>Frontend</dt><dd>React, Vite, React Router, TanStack Query, Tailwind CSS</dd></div>
+    <div><dt>AI and agents</dt><dd>Claude Agent SDK, MCP, Claude Code, prompt design, LLM APIs</dd></div>
+    <div><dt>Data and infra</dt><dd>PostgreSQL, Redis, Docker, Render, Neon, Vercel, Railway</dd></div>
+    <div><dt>Testing</dt><dd>pytest, Vitest, Playwright, Schemathesis</dd></div>
+  </dl>
+</section>
+
+<section id="contact" class="contact" aria-labelledby="contact-h">
+  <h2 id="contact-h">Let's talk</h2>
+  <p>I'm looking for Software Engineering roles in Full-Stack and AI Engineering.</p>
+  <a class="email" href="mailto:dvir54693@gmail.com">dvir54693@gmail.com</a>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/dvir-itshacov-154050353/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Dvir54" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Dvir Itshacov, 2026</p>
+</footer>
+
+</body>
+</html>
