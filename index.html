@@ -29,11 +29,11 @@
   <div class="hero-text">
     <p class="status"><span class="dot" aria-hidden="true"></span>Open to Full-Stack and AI Engineering roles</p>
     <h1>Dvir<br>Itshacov</h1>
-    <p class="role">Software developer building full-stack products and AI agents.</p>
+    <p class="role">Full-Stack &amp; AI Software Developer</p>
     <p class="intro">
       Computer Science student at Ben-Gurion University, in my final semester.
-      I take projects all the way: database, API, interface, tests, and a deployment
-      you can open.
+      I build end-to-end applications, from database design and APIs to the front end,
+      automated testing and production deployment.
     </p>
     <div class="actions">
       <a class="btn primary" href="mailto:dvir54693@gmail.com">Email me</a>
@@ -49,12 +49,12 @@
     <a class="stop s1" href="#ridematch">
       <span class="pin" aria-hidden="true"></span>
       <span class="stop-name">RideMatch</span>
-      <span class="stop-desc">Ride-sharing app, live</span>
+      <span class="stop-desc">Ride-sharing platform · In production</span>
     </a>
     <a class="stop s2" href="#job-agent">
       <span class="pin" aria-hidden="true"></span>
       <span class="stop-name">Job Search Agent</span>
-      <span class="stop-desc">Claude scores jobs, tailors my CV</span>
+      <span class="stop-desc">AI job matching &amp; CV tailoring</span>
     </a>
     <a class="stop s3" href="#crypto">
       <span class="pin" aria-hidden="true"></span>
@@ -69,16 +69,16 @@
   <div class="about-body">
     <p>
       I enjoy building software, understanding how systems work, and turning
-      complex problems into practical solutions. My projects tend to go all the way:
-      a schema and migrations, an API with a written contract, a front end, tests at
-      every layer, and a deployment someone can actually open.
+      complex problems into practical solutions. I approach each project as a complete
+      product: a well-designed schema with migrations, a contract-first API, a responsive
+      front end, tests at every layer, and a production deployment.
     </p>
     <p>
-      Lately most of my work sits where full-stack meets AI: agents that collect
-      data, let an LLM judge it, and keep the parts that must be repeatable in plain,
-      tested code. I'm self-driven and curious, comfortable solving problems on my own
-      and as part of a team, and I'm looking for a place where I can contribute,
-      keep learning, and grow as a developer.
+      My recent work focuses on combining full-stack development with AI: LLM-powered
+      agents that handle judgment-based tasks, while the logic that must stay predictable
+      lives in deterministic, tested code. I'm self-driven and curious, comfortable
+      working independently and as part of a team, and I'm seeking a role where I can
+      deliver impact, learn from experienced engineers, and keep growing.
     </p>
   </div>
 </section>
@@ -115,9 +115,9 @@
     <div class="project-body">
       <div class="project-intro">
         <p>
-          Drivers post the route and time they are already travelling; passengers search,
-          get matches ranked by how well they fit, and request a seat. The driver approves,
-          they travel, and both rate each other. An admin panel handles moderation.
+          Drivers publish routes they are already taking; passengers search and receive
+          ranked matches based on route and schedule fit. Drivers approve requests, both
+          parties rate each other after the trip, and an admin panel handles moderation.
         </p>
         <div class="links">
           <a class="btn primary" href="https://app.ridematchapp.com" target="_blank" rel="noopener">Open the live app</a>
@@ -141,7 +141,7 @@
   <article class="project" id="job-agent" style="--accent: #7fd6c2">
     <header class="project-head">
       <h3>Job Search Agent</h3>
-      <p class="tagline">An AI agent that finds junior roles in Israel and tailors my CV to each one.</p>
+      <p class="tagline">An AI agent that finds relevant junior roles in Israel and generates a tailored CV for each strong match.</p>
     </header>
     <div class="stage stage-agent">
       <ol class="pipeline" aria-label="How the agent works">
@@ -181,7 +181,7 @@
         <p>
           Every morning it collects new LinkedIn postings, deduplicates them, has Claude score
           each one against my CV with written reasoning, generates a tailored CV for strong
-          matches, and emails me the results. It never applies on its own; I decide.
+          matches, and emails me the results. Applications are always submitted manually, so a person makes the final decision.
         </p>
         <div class="links">
           <a class="btn primary" href="https://github.com/Dvir54/JobSearchAgentSystem" target="_blank" rel="noopener">View the code</a>
@@ -191,7 +191,7 @@
         <ul class="points">
           <li>LLM for judgment, deterministic code for enforcement: filtering, dedup and persistence stay in tested Python.</li>
           <li>Guards run as hooks on the agent's tool calls and reject a CV that claims a skill the base CV doesn't support.</li>
-          <li>Runs as a scheduled task and sends an email every day, even when a run fails.</li>
+          <li>Runs on a daily schedule and always sends a report, even when a run fails.</li>
         </ul>
         <ul class="chips" aria-label="Technologies">
           <li>Python</li><li>Claude Agent SDK</li><li>MCP</li><li>Canva</li><li>PostgreSQL</li><li>Docker</li><li>pytest</li>
@@ -255,7 +255,7 @@
 
 <section id="contact" class="contact" aria-labelledby="contact-h">
   <h2 id="contact-h">Let's talk</h2>
-  <p>I'm looking for Software Engineering roles in Full-Stack and AI Engineering.</p>
+  <p>Open to junior Software Engineering roles in Full-Stack and AI development.</p>
   <a class="email" href="mailto:dvir54693@gmail.com">dvir54693@gmail.com</a>
   <div class="links">
     <a href="https://www.linkedin.com/in/dvir-itshacov-154050353/" target="_blank" rel="noopener">LinkedIn</a>
@@ -266,7 +266,7 @@
 </main>
 
 <footer class="foot">
-  <p>Dvir Itshacov, 2026</p>
+  <p>&copy; 2026 Dvir Itshacov</p>
 </footer>
 
 </body>
